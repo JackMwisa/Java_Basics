@@ -1,2 +1,6 @@
-package com.jackmwisa;public class ReferenceType {
+package com.jackmwisa;
+
+public class ReferenceType {
+    
+
 }
