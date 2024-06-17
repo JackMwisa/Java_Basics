@@ -2,9 +2,9 @@ package Day2;
 
 public class Main {
     public static void main(String[] args) {
-        byte age = 30;
-        age += 1;
+        byte startingAge = 30;
+        int newAge = startingAge * 2;
 
-        System.out.println(age);
+        System.out.println("Our starting age is " + startingAge + ", and our age times two is " + newAge);
     }
 }
