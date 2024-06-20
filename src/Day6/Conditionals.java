@@ -18,5 +18,19 @@ public class Conditionals {
         System.out.println(x == y);
 
 
+        int temp = 12;
+        boolean isWarm = temp > 20 && temp < 20;
+
+        System.out.println(isWarm);
+
+
+        boolean hasHighIncome = true;
+        boolean hasHighscore = true;
+        boolean hasCriminalRecords = false;
+        boolean isEligible = (hasHighscore || hasHighIncome) && !hasCriminalRecords;
+
+        System.out.println(isEligible);
+        
+
     }
 }
