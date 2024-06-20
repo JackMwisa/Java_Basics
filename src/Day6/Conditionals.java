@@ -30,7 +30,7 @@ public class Conditionals {
         boolean isEligible = (hasHighscore || hasHighIncome) && !hasCriminalRecords;
 
         System.out.println(isEligible);
-        
+
 
     }
 }
