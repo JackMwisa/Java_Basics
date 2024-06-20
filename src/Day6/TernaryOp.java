@@ -1,13 +1,11 @@
 package Day6;
 
-public class SimplifyingIfStatements {
-
+public class TernaryOp {
     public static void main(String[] args) {
 
         int income = 120_000;
-        boolean hasHighIncome = (income > 10_0000);
 
+        String className = income > 100_000 ? "First" : "Economy";
 
     }
-
 }
