@@ -24,6 +24,15 @@ public class WhileLoops {
             Scanner scanner = new Scanner(System.in);
             input = scanner.next().toLowerCase();
 
+            if (input.equals("quit")){
+                break;
+            }
+
+            System.out.println(input);
+
+
+
+
         }
 
 
