@@ -1,5 +1,7 @@
 package Day6;
 
+import java.util.Scanner;
+
 public class WhileLoops {
     public static void main(String[] args) {
 //        for loops
@@ -14,6 +16,19 @@ public class WhileLoops {
             System.out.println("Hello World " + i);
             i++;
         }
+
+
+        String input ="";
+        while (!input.equals("quit")) {
+            System.out.print("Input: ");
+            Scanner scanner = new Scanner(System.in);
+            input = scanner.next().toLowerCase();
+
+        }
+
+
+
+
     }
 
 }
