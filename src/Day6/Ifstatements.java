@@ -8,6 +8,7 @@ public class Ifstatements {
 
         Scanner input = new Scanner(System.in);
         System.out.println("What's the temperature? ");
+
         int temp = input.nextInt();
 
         if (temp > 30){
