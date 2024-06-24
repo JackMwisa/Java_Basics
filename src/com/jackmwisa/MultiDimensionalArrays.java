@@ -11,8 +11,6 @@ public class MultiDimensionalArrays {
 
         System.out.println(Arrays.deepToString(numbers));
 
-
-
     int[][] days = {{1,2,3}, {4,5,6}};
         System.out.println(Arrays.deepToString(days));
 
