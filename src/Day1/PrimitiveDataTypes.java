@@ -42,6 +42,18 @@ public class PrimitiveDataTypes {
         System.out.println(myVar1);
         System.out.println(myVar2);
         System.out.println(myVar3);
+
+        // real life example
+        System.out.println("\nReal life example\n");
+        int items = 50;
+        float costPerItem = 9.99f;
+        float totalCost = items * costPerItem;
+        char currency = '$';
+
+        System.out.println("Number of items: " + items);
+        System.out.println("Cost per item: " + costPerItem + currency);
+        System.out.println("Total cost = " + totalCost + currency);
+
     }
 
 }
