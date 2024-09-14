@@ -3,9 +3,15 @@ package Day2;
 public class ReadyToVote {
     public static void main(String[] args) {
 
-        int age = 17;
+        int age = 18;
         int leagalAge = 18;
 
-        System.out.println("Ready to vote is: " + (leagalAge <= age));
+        if (age >= leagalAge)
+            System.out.println("You can vote");
+        else
+            System.out.println("You're not old enough");
+
+
+
     }
 }
