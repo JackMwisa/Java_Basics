@@ -15,7 +15,7 @@ public class Variables {
 
         String fullName = "Jean-Jacques Mwisa Kassanova";
         int myAge = 24;
-        float PI = 3.14F;
+        final float PI = 3.14F;
         double money = 345.829;
         char letter = 'J';
         boolean isMarried = false;
@@ -28,6 +28,13 @@ public class Variables {
         System.out.println(letter);
         System.out.println(money);
 
+
+
+        int myNum = 5;               // Integer (whole number)
+        float myFloatNum = 5.99f;    // Floating point number
+        char myLetter = 'D';         // Character
+        boolean myBool = true;       // Boolean
+        String myText = "Hello";     // String
 
     }
 
