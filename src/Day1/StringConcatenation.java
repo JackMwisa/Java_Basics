@@ -5,5 +5,8 @@ public class StringConcatenation {
         String firstName = "John";
         String lastName = "Peter";
         System.out.println(firstName + " " + lastName);
+
+        firstName = "John ";
+        System.out.println(firstName.concat(lastName));
     }
 }
