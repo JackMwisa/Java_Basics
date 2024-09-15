@@ -8,5 +8,6 @@ public class OpenAdoor {
         String openDoor = (code == 12453) ? "Access granted" : "Wrong code";
 
         System.out.println(openDoor);
+        
     }
 }
