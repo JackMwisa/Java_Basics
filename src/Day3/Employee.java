@@ -9,6 +9,14 @@ public class Employee {
         return baseSalary + hourlyRate + extraHours;
     }
 
+
+    public void setBaseSalary(int baseSalary){
+        if (baseSalary <= 0)
+            throw new IllegalArgumentException("Salary can not be 0 0r less");
+        this.baseSalary = baseSalary;
+
+    }
+
     public static void main(String[] args) {
         var employee1 = new Employee();
 
@@ -16,7 +24,7 @@ public class Employee {
         employee1.hourlyRate = 10;
         int wage = employee1.calculateWage(10);
 
-        
+
 
     }
 
