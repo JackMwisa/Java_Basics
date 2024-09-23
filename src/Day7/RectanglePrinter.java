@@ -2,11 +2,9 @@ package Day7;
 
 public class RectanglePrinter {
     public static void printRectangle(int a, int b, char c) {
+        String row = String.valueOf(c).repeat(b);
         for (int i = 0; i < a; i++) {
-            for (int j = 0; j < b; j++) {
-                System.out.print(c);
-            }
-            System.out.println();
+            System.out.println(row);
         }
     }
 
