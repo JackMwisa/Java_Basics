@@ -6,7 +6,6 @@ public class ShapePrinter {
             System.out.println(row);
         }
     }
-
     public static void printTriangle(int n, char c) {
         for (int i = 1; i <= n; i++) {
             System.out.println(String.valueOf(c).repeat(i));
