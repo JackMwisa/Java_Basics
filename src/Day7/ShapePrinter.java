@@ -12,7 +12,6 @@ public class ShapePrinter {
             System.out.println(String.valueOf(c).repeat(i));
         }
     }
-
     public static void main(String[] args) {
         printRectangle(3, 4, 'f');
         System.out.println();
