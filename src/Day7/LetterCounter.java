@@ -1,7 +1,7 @@
 package Day7;
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
+
 public class LetterCounter {
     public static void main(String[] args) {
         String fileName = "Huseyin.txt";
@@ -19,8 +19,8 @@ public class LetterCounter {
                     count++;
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            // No exception handling
         }
         return count;
     }
