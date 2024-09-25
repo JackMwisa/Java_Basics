@@ -1,0 +1,4 @@
+Today weather is so nice
+
+Create a function countLetter(String fileName, char letter){
+}
