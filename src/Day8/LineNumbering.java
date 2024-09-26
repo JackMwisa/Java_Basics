@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LineNumbering {
     public static void main(String[] args) {
-        printLineNumbers("Huseyin.txt");
+        printLineNumbers("jack.txt");
     }
 
     public static void printLineNumbers(String fileName) {
