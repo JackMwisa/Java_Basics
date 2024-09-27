@@ -14,9 +14,7 @@ public class LineNumbering {
         try {
             // Read all lines from the file
             List<String> lines = Files.readAllLines(path);
-            // Create a new list to store the updated lines
             List<String> numberedLines = new ArrayList<>();
-            // Add line numbers to each line
             for (int i = 0; i < lines.size(); i++) {
                 numberedLines.add((i + 1) + "- " + lines.get(i));
             }
