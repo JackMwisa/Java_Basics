@@ -19,7 +19,18 @@ public class Operators {
         System.out.println(s.length());
         System.out.println(ss.repeat(5));
 
+
         System.out.println(c);
+
+
+        int[] numbers = {1,2,3,4,5,5};
+
+        numbers.toString();
+
+        System.out.println(numbers);
+
+        int[] arrys = new int[8];
+
 
 
 
