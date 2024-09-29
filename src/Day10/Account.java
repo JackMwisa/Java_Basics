@@ -7,10 +7,12 @@ public class Account {
 
     public void deposit(double amount){
         // implementation
+
     }
 
     public void withdraw(double amount){
         // implementation
+
     }
 
 }
