@@ -11,10 +11,17 @@ public class Operators {
         System.out.println(z);
 
 
-        String s = "e";
-        String ss = "E";
+        String s = "eE";
+        String ss = "Ee";
 
-        
+        boolean c = s.equals(ss);
+
+        System.out.println(s.length());
+        System.out.println(ss.repeat(5));
+
+        System.out.println(c);
+
+
 
 
     }
