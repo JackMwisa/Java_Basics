@@ -15,6 +15,9 @@ public class Account {
 
     }
 
+    public double calculateCredit(){
+        return 100;
+    }
     public String getOwner() {
         return owner;
     }
