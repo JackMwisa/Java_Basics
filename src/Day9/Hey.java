@@ -6,9 +6,9 @@ public class Hey {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter yout Name? ");
+        System.out.print("Enter yout Name: ");
         String name = input.nextLine();
-        System.out.println("Hey, your name is " + name);
+        System.out.println("Hey, your name is " + name + "!");
 
 
     }
