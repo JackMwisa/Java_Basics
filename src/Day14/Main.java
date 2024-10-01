@@ -2,6 +2,7 @@ package Day14;
 
 public class Main {
     public static void main(String[] args) {
+
         // PERSON OBJ
         Person person1 = new Person("Jack", 24, "JackMwisa", "1234");
         Person person2 = new Person("Sam", 21, "SamNeema", "5678");
@@ -18,7 +19,6 @@ public class Main {
         Manager manager2 = new Manager("Alex", 40, "Alex456", "0123");
         System.out.println(manager1);
         System.out.println(manager2);
-
 
     }
 }
