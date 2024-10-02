@@ -3,18 +3,20 @@ package Day15;
 public class Main {
     public static void main(String[] args) {
         // Creating objects of the subclasses
-        Dog myDog = new Dog();
-        Cat myCat = new Cat();
-        Cow myCow = new Cow();
+        Dog dog1 = new Dog();
+        Cat cat1 = new Cat();
+        Lion lion1 = new Lion();
+
+        // Animal dog = new Animal();
 
         // Calling methods on the objects
-        myDog.makeSound();
-        myDog.sleep();
+        dog1.makeSound();
+        cat1.makeSound();
+        lion1.makeSound();
 
-        myCat.makeSound();
-        myCat.sleep();
-
-        myCow.makeSound();
-        myCow.sleep();
+        // trying a regular function
+        dog1.sleep();
+        cat1.sleep();
+        lion1.sleep();
     }
 }
