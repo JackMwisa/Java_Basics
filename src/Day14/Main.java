@@ -20,5 +20,22 @@ public class Main {
         System.out.println(manager1);
         System.out.println(manager2);
 
+
+
+        // Print initial balance // out current balance is 1000
+        System.out.println("Initial Balance: " + customer1.getBalance());
+
+        // Manager increases the customer's balance by 100.00
+        manager1.increaseMoney(customer1, 100.00);
+
+        System.out.println(customer1.getBalance());
+
+        // Manager decreases the customer's balance by 50.00
+        manager1.decreaseMoney(customer1, 50.00);
+        System.out.println(customer1.getBalance());
+
+        // Attempting to decrease by an amount larger than the current balance
+        manager1.decreaseMoney(customer1, 600.00);  // Should show an error message
+
     }
 }

@@ -26,6 +26,35 @@ public class Manager extends Person {
         this.actionNumber = actionNumber;
     }
 
+//    public int increaseMoney(Customer customer, int amount ){
+//
+//    }
+
+    public void updateMoney(Customer customer, double changeAmount) {
+        double newBalance = customer.getBalance() + changeAmount;
+        customer.setBalance(newBalance);
+        System.out.println("Customer " + customer.getName() + "'s new balance: " + customer.getBalance());
+    }
+
+
+    public void increaseMoney(Customer customer, double amount) {
+        if (amount > 0) {
+            updateMoney(customer, amount);
+        } else {
+            System.out.println("Amount to increase must be positive.");
+        }
+    }
+
+
+    public void decreaseMoney(Customer customer, double amount) {
+        if (amount > 0 && customer.getBalance() >= amount) {
+            updateMoney(customer, -amount);
+        } else {
+            System.out.println("Amount to decrease must be positive and less than or equal to the current balance.");
+        }
+    }
+
+
     @Override
     public String toString() {
         return super.toString() + ", ManagerID: " + managerID + ", ActionNumber: " + actionNumber;
