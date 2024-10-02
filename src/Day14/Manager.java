@@ -30,13 +30,17 @@ public class Manager extends Person {
 //
 //    }
 
+
+    // updating the balance function
     public void updateMoney(Customer customer, double changeAmount) {
-        double newBalance = customer.getBalance() + changeAmount;
+        double previousBalance = customer.getBalance();
+        double newBalance = previousBalance + changeAmount;
         customer.setBalance(newBalance);
         System.out.println("Customer " + customer.getName() + "'s new balance: " + customer.getBalance());
     }
 
 
+    // increase money
     public void increaseMoney(Customer customer, double amount) {
         if (amount > 0) {
             updateMoney(customer, amount);
@@ -46,6 +50,7 @@ public class Manager extends Person {
     }
 
 
+    // decrease money
     public void decreaseMoney(Customer customer, double amount) {
         if (amount > 0 && customer.getBalance() >= amount) {
             updateMoney(customer, -amount);
