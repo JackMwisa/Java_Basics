@@ -1,4 +1,6 @@
-package Day19;
+package Day19.Question1;
+
+import Day19.Question1.Calculator;
 
 public class CalculatorClass implements Calculator {
 

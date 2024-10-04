@@ -1,4 +1,7 @@
-package Day19;
+package Day19.Question1;
+
+import Day19.Question1.Calculator;
+import Day19.Question1.CalculatorClass;
 
 public class Main {
     public static void main(String[] args) {

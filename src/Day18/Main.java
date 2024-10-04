@@ -16,14 +16,14 @@ public class Main {
         Person student2Italian = new Student("Diego", 202);
 
         // Take attendance for Math class
-        mathClass.takeAttendance(teacherMath);
-        mathClass.takeAttendance(student1Math);
-        mathClass.takeAttendance(student2Math);
+        mathClass.takeAttendance(String.valueOf(teacherMath));
+        mathClass.takeAttendance(String.valueOf(student1Math));
+        mathClass.takeAttendance(String.valueOf(student2Math));
 
         // Take attendance for Italian class
-        italianClass.takeAttendance(teacherItalian);
-        italianClass.takeAttendance(student1Italian);
-        italianClass.takeAttendance(student2Italian);
+        italianClass.takeAttendance(String.valueOf(teacherItalian));
+        italianClass.takeAttendance(String.valueOf(student1Italian));
+        italianClass.takeAttendance(String.valueOf(student2Italian));
 
         // Print attendance lists
         System.out.println("Math Class Attendance: " + mathClass.getAttendanceList());
