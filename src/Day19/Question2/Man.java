@@ -1,7 +1,8 @@
 package Day19.Question2;
 
-public class Man extends Person{
-    public Man(String name){
+public class Man extends Person {
+
+    Man(String name) {
         super(name);
     }
 
@@ -10,4 +11,8 @@ public class Man extends Person{
         System.out.println(getName() + " is working as a Man.");
     }
 
+    @Override
+    void printNameAndType() {
+        System.out.println("Name: " + name + ", Type: Man");
+    }
 }

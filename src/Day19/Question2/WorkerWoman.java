@@ -1,13 +1,19 @@
 package Day19.Question2;
 
 public class WorkerWoman extends Woman {
+    int workingHours;
 
-    public WorkerWoman(String name) {
+    WorkerWoman(String name, int workingHours) {
         super(name);
+        this.workingHours = workingHours;
+    }
+
+    public void work() {
+        System.out.println(name + " worked " + workingHours + " hours.");
     }
 
     @Override
-    public void work() {
-        System.out.println(getName() + " is working as a WorkerWoman.");
+    void printNameAndType() {
+        System.out.println("Name: " + name + ", Type: WorkerWoman");
     }
 }

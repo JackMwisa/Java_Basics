@@ -17,4 +17,6 @@ public abstract class Person {
     }
 
     public abstract void work();
+
+    abstract void printNameAndType();
 }
