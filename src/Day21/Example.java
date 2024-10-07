@@ -15,6 +15,10 @@ public class Example {
         System.out.println(listOfFruits);
 
 
+        for (int i = 0; i < listOfFruits.size(); i++) {
+            System.out.println(listOfFruits.get(i));
+        }
+
 
         Set<Integer> numbers = new LinkedHashSet<>();
         numbers.add(1);
