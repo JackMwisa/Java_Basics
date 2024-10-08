@@ -5,39 +5,41 @@ public class Main {
 
 
         FourDoorCar car1 = new FourDoorToyota("Toyota Camry", "Camry", 30000, 240, 50, 2020, 15000, 200);
-        car1.start();
-        car1.accelerate();
-        car1.accelerate();
-        car1.brake();
-        car1.stop();
+//        car1.start();
+//        car1.accelerate();
+//        car1.accelerate();
+//        car1.brake();
+//        car1.stop();
 
         TwoDoorCar car2 = new TwoDoorBMW("BMW M4", "M4", 80000, 280, 60, 2021, 10000, 400);
-        car2.start();
-        car2.accelerate();
-        car2.brake();
-        car2.stop();
+//        car2.start();
+//        car2.accelerate();
+//        car2.brake();
+//        car2.stop();
 
        // TwoDoorCar car3 = new TwoDoorFord();
 
         // Call sell() method for both cars
-        car1.sell();
-        car2.sell();
+//        car1.sell();
+//        car2.sell();
 
 
-        Dealer dealer = new Dealer("Best Cars", 5_000_000);
+        Dealer dealer = new Dealer("Super Cars", 10_000_000);
         dealer.dealerMenu();
+
+        // Example of using getters
+        System.out.println("Dealer Name: " + dealer.getDealerName());
+        System.out.println("Initial Balance: $" + dealer.getMoney());
+
+        // Example of using setters
+        dealer.setDealerName("Premium Cars");
+        dealer.setMoney(600000);
+        System.out.println("Updated Dealer Name: " + dealer.getDealerName());
+        System.out.println("Updated Balance: $" + dealer.getMoney());
     }
 }
 
-interface Car {
-    void start();
-    void stop();
-    void accelerate();
-    void brake();
 
-    double sell();
-
-}
 
 abstract class FourDoorCar implements Car {
     String model;

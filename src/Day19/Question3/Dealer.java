@@ -8,34 +8,32 @@ class Dealer {
     private double money;
     private ArrayList<Car> carInventory;
 
-    // Constructor to initialize dealer name and starting money
+
     public Dealer(String dealerName, double money) {
         this.dealerName = dealerName;
         this.money = money;
         this.carInventory = new ArrayList<>();
     }
 
-    // Getter for dealerName
+
     public String getDealerName() {
         return dealerName;
     }
 
-    // Setter for dealerName
+
     public void setDealerName(String dealerName) {
         this.dealerName = dealerName;
     }
 
-    // Getter for money
     public double getMoney() {
         return money;
     }
 
-    // Setter for money
     public void setMoney(double money) {
         this.money = money;
     }
 
-    // Getter for carInventory
+
     public ArrayList<Car> getCarInventory() {
         return carInventory;
     }
@@ -54,15 +52,19 @@ class Dealer {
     }
 
     // Function to sell a car
-    public void sellCar(int carIndex) {
+    public void sellCar() {
+        showAllCars();
+        System.out.print("Enter the number of the car to sell: ");
+        Scanner scanner = new Scanner(System.in);
+        int carIndex = scanner.nextInt() - 1; 
         if (carIndex < 0 || carIndex >= carInventory.size()) {
-            System.out.println("Invalid car index.");
+            System.out.println("Invalid car number.");
             return;
         }
         Car car = carInventory.get(carIndex);
         double sellingPrice = car.sell();
-        carInventory.remove(carIndex);  // Remove the sold car from inventory
-        money += sellingPrice;           // Update dealer's money
+        carInventory.remove(carIndex);
+        money += sellingPrice;
         System.out.println("Car sold for $" + String.format("%.3f", sellingPrice) + ". Current balance: $" + String.format("%.2f", money));
     }
 
@@ -90,9 +92,7 @@ class Dealer {
                     showAllCars();
                     break;
                 case 2:
-                    System.out.print("Enter the index of the car to sell: ");
-                    int carIndex = scanner.nextInt() - 1; // Convert to zero-based index
-                    sellCar(carIndex);
+                    sellCar(); // Call the updated sellCar method
                     break;
                 case 3:
                     // Adding a car using pre-defined models
