@@ -22,6 +22,10 @@ public class Main {
         // Call sell() method for both cars
         car1.sell();
         car2.sell();
+
+
+        Dealer dealer = new Dealer("Best Cars", 5_000_000);
+        dealer.dealerMenu();
     }
 }
 
@@ -248,7 +252,6 @@ class FourDoorHyundai extends FourDoorCar {
     }
 }
 
-// Concrete Classes for TwoDoorCar
 class TwoDoorToyota extends TwoDoorCar {
     public TwoDoorToyota(String model, String name, double price, double maxSpeed, double fuelCapacity, int year, double mileage, double power) {
         super(model, name, price, maxSpeed, fuelCapacity, (double) year, mileage, (int) power);
