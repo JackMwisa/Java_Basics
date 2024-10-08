@@ -17,6 +17,8 @@ public class Main {
         car2.brake();
         car2.stop();
 
+       // TwoDoorCar car3 = new TwoDoorFord();
+
         // Call sell() method for both cars
         car1.sell();
         car2.sell();
@@ -59,6 +61,11 @@ abstract class FourDoorCar implements Car {
     @Override
     public double sell() {
         double sellingPrice = (power / (mileage * year)) * 10000000;
+
+        // round to 3 dec places
+        sellingPrice = Math.round(sellingPrice * 1000.0) / 1000.0;
+
+
         if (sellingPrice < 0) {
             sellingPrice = 0;
         }
@@ -91,20 +98,7 @@ abstract class FourDoorCar implements Car {
         System.out.println(name + " Braking to " + speed + " km/h");
     }
 
-    @Override
-    public String toString() {
-        return "FourDoorCar{" +
-                "model='" + model + '\'' +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", maxSpeed=" + maxSpeed +
-                ", fuelCapacity=" + fuelCapacity +
-                ", speed=" + speed +
-                ", year=" + year +
-                ", mileage=" + mileage +
-                ", power=" + power +
-                '}';
-    }
+
 }
 
 abstract class TwoDoorCar implements Car {
@@ -133,6 +127,9 @@ abstract class TwoDoorCar implements Car {
     @Override
     public double sell() {
         double sellingPrice = (power / (mileage * year)) * 10000000;
+
+        // round to 3 dec places
+        sellingPrice = Math.round(sellingPrice * 1000.0) / 1000.0;
 
         if (sellingPrice < 0) sellingPrice = 0;
         System.out.println(name + " Selling price: $" + sellingPrice);
@@ -164,20 +161,7 @@ abstract class TwoDoorCar implements Car {
         System.out.println(name + " Braking to " + speed + " km/h");
     }
 
-    @Override
-    public String toString() {
-        return "TwoDoorCar{" +
-                "model='" + model + '\'' +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", maxSpeed=" + maxSpeed +
-                ", fuelCapacity=" + fuelCapacity +
-                ", speed=" + speed +
-                ", mileage=" + mileage +
-                ", power=" + power +
-                ", year=" + year +
-                '}';
-    }
+
 }
 
 class FourDoorToyota extends FourDoorCar {
