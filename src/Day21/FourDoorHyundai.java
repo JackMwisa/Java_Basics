@@ -1,7 +1,8 @@
 package Day21;
 
-public class TwoDoorToyota extends TwoDoorCar {
-    public TwoDoorToyota(String model, int year) {
+public class FourDoorHyundai extends FourDoorCar {
+
+    public FourDoorHyundai(String model, int year) {
         super(model, year);
     }
 
@@ -23,10 +24,5 @@ public class TwoDoorToyota extends TwoDoorCar {
     @Override
     public void repair() {
 
-    }
-
-    @Override
-    public String toString() {
-        return "TwoDoorToyota{}";
     }
 }

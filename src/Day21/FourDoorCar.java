@@ -21,5 +21,12 @@ abstract class FourDoorCar implements Car {
 
     public abstract void openRoof();
 
+    @Override
+    public String toString() {
+        return "FourDoorCar{" +
+                "model='" + model + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }
 
