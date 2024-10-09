@@ -9,7 +9,7 @@ class Dealer {
     private ArrayList<Car> carInventory;
 
 
-    public Dealer(String dealerName) {
+    public Dealer(String dealerName, double money) {
         this.dealerName = dealerName;
         this.money = money;
         this.carInventory = new ArrayList<>();

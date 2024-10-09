@@ -3,14 +3,14 @@ package Day19.Question3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Dealers extends Dealer{
+public class Dealers extends Dealer {
 
 
     private ArrayList<Dealers> listOfDealers;
 
 
-    public Dealers(String dealerName){
-        super(dealerName);
+    public Dealers(String dealerName, double money){
+        super(dealerName, money);
         this.listOfDealers = new ArrayList<>();
     }
 
@@ -34,7 +34,7 @@ public class Dealers extends Dealer{
         System.out.print("Enter starting balance: ");
         double money = scanner.nextDouble();
 
-        Dealer newDealer = new Dealer(dealerName);
+        Dealer newDealer = new Dealer(dealerName, money);
         listOfDealers.add((Dealers) newDealer);
         System.out.println("Dealer " + dealerName + " has been added.");
     }
