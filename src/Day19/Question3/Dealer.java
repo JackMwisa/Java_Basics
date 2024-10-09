@@ -56,7 +56,7 @@ class Dealer {
         showAllCars();
         System.out.print("Enter the number of the car to sell: ");
         Scanner scanner = new Scanner(System.in);
-        int carIndex = scanner.nextInt() - 1; 
+        int carIndex = scanner.nextInt() - 1;
         if (carIndex < 0 || carIndex >= carInventory.size()) {
             System.out.println("Invalid car number.");
             return;
