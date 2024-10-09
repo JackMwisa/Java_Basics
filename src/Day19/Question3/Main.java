@@ -24,7 +24,7 @@ public class Main {
 //        car2.sell();
 
 
-        Dealer dealer = new Dealer("Super Cars", 10_000_000);
+        Dealer dealer = new Dealer("Super Cars");
         dealer.dealerMenu();
 
         // Example of using getters
@@ -36,6 +36,9 @@ public class Main {
         dealer.setMoney(600000);
         System.out.println("Updated Dealer Name: " + dealer.getDealerName());
         System.out.println("Updated Balance: $" + dealer.getMoney());
+
+        Dealers dealers1 = new Dealers("Jack");
+        dealers1.dealersMenu();
     }
 }
 

@@ -3,12 +3,14 @@ package Day19.Question3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Dealers {
+public class Dealers extends Dealer{
+
 
     private ArrayList<Dealers> listOfDealers;
 
 
-    public Dealers(){
+    public Dealers(String dealerName){
+        super(dealerName);
         this.listOfDealers = new ArrayList<>();
     }
 
@@ -24,7 +26,7 @@ public class Dealers {
         }
     }
 
-    // Add a new dealer
+
     public void addDealer() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter dealer name: ");
@@ -32,12 +34,12 @@ public class Dealers {
         System.out.print("Enter starting balance: ");
         double money = scanner.nextDouble();
 
-        Dealer newDealer = new Dealer(dealerName, money);
-        listOfDealers.add(newDealer);
+        Dealer newDealer = new Dealer(dealerName);
+        listOfDealers.add((Dealers) newDealer);
         System.out.println("Dealer " + dealerName + " has been added.");
     }
 
-    // Access an existing dealer's menu
+
     public void accessDealerMenu() {
         if (listOfDealers.isEmpty()) {
             System.out.println("No dealers available to access.");
