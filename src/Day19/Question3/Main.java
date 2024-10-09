@@ -24,7 +24,7 @@ public class Main {
 //        car2.sell();
 
 
-        Dealer dealer = new Dealer("Super Cars", money);
+        Dealer dealer = new Dealer("Super Cars", 409_094);
         dealer.dealerMenu();
 
         // Example of using getters
