@@ -6,14 +6,14 @@ import java.util.List;
 abstract class SimplePhone implements Phone {
     String contact;
     String message;
-    List<String> callHistory = new ArrayList<>();
-    List<String> textHistory = new ArrayList<>();
+    List<String> callHistory;
+    List<String> textHistory;
 
     public SimplePhone(String contact, String message) {
         this.contact = contact;
         this.message = message;
-        this.callHistory = callHistory;
-        this.textHistory = textHistory;
+        this.callHistory = new ArrayList<>();
+        this.textHistory = new ArrayList<>();
     }
 
     @Override
@@ -43,4 +43,9 @@ abstract class SimplePhone implements Phone {
             System.out.println(text);
         }
     }
+
+    public abstract void call();
+
+    public abstract void text();
+
 }
