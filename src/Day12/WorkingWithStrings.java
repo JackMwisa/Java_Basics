@@ -25,13 +25,18 @@ public class WorkingWithStrings {
         System.out.println(s1.equals(s2)); // true
 
 
-        // string builder
+        // String builder
         StringBuilder sb = new StringBuilder("Jack");
 
         sb.append(" Mwisa");
 
-        System.out.println(sb);
+        System.out.println(sb.toString());
 
+
+
+        // String buffer
+
+        
 
     }
 }
