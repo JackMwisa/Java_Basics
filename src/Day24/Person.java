@@ -9,7 +9,7 @@ public class Person {
     public void sayHi(){
         System.out.println("Hello, I'm " + name);
     }
-    
+
     private void tellSecret() {
         System.out.println("the secret is " + secret);
 
