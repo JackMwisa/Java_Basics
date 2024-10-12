@@ -14,5 +14,24 @@ public class WorkingWithStrings {
 
         System.out.println(t1.getDescription() + " " + t2.getDescription());
 
+
+//       comparing strings
+
+        String s1 = "Hi";
+        String s2 = new String("Hi");
+
+        System.out.println(s1 == s2); // false
+
+        System.out.println(s1.equals(s2)); // true
+
+
+        // string builder
+        StringBuilder sb = new StringBuilder("Jack");
+
+        sb.append(" Mwisa");
+
+        System.out.println(sb);
+
+
     }
 }
