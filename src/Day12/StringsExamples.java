@@ -16,5 +16,15 @@ public class StringsExamples {
 
         System.out.println(str.toUpperCase() + " " + str.toLowerCase());
 
+
+        String greet ="Hi";
+        String greet2 = "Hello";
+
+        System.out.println(greet + " " + greet2);
+
+        greet = "Ciau";
+        
+        System.out.println(greet + " " + greet2);
+
     }
 }
