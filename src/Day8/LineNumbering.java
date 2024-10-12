@@ -6,6 +6,7 @@ import java.util.List;
 
 public class LineNumbering {
     public static void main(String[] args) {
+
         printLineNumbers("jack.txt");
     }
 
