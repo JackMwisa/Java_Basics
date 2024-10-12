@@ -2,7 +2,6 @@ package Day8;
 
 public class WhileLoopsExample {
     public static void main(String[] args){
-
         // loops that stops only when finds number 10
         boolean notFound = true;
         int numOfItaration = 0;
