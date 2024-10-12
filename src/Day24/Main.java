@@ -6,6 +6,8 @@ public class Main {
 
         person1.name = "Johnny";
 
+//        person1.secret;
+
         person1.sayHi();
     }
 }
