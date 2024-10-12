@@ -10,6 +10,7 @@ public class ForLoopsExample1 {
         for (int i = 0; i < nrs.length; i++) {
             if (nrs[i] == search) {
                 index = i;
+                break;
             }
         }
 
