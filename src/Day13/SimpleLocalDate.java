@@ -12,5 +12,11 @@ public class SimpleLocalDate {
         System.out.println(ld);
         System.out.println(ld1);
         System.out.println(ld2);
+
+
+        LocalDate ld3 = ld.plusDays(45);
+        System.out.println(ld3);
+
+        System.out.println(ld3.getYear());
     }
 }
