@@ -30,6 +30,22 @@ public abstract class SimpleAnimal implements AnimalInteraction {
         }
     }
 
+
+//    @Override
+//    public void feed(String food) {
+//
+//    }
+//
+//    @Override
+//    public void play() {
+//
+//    }
+//
+//    @Override
+//    public void showInteractionHistory() {
+//
+//    }
+
     public void sleep(int hours) {
         interactionHistory.add(animalType + " slept for " + hours + " hours");
     }
