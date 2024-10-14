@@ -16,7 +16,6 @@ public class Main {
         MathUtils m1 =  new MathUtils();
         m1.pi = 23;
 
-
         System.out.println();
         System.out.println(m.pi + " " + MathUtils.pi + " " + m1.pi);
 
