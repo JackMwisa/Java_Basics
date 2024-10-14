@@ -1,4 +1,4 @@
-package Day25;
+package Week4.Day25;
 
 public interface AnimalInteraction {
 

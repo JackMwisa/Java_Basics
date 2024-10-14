@@ -1,7 +1,6 @@
-package Day25;
+package Week4.Day25;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public abstract class SimpleAnimal implements AnimalInteraction {
     ArrayList<String> interactionHistory = new ArrayList<>();
