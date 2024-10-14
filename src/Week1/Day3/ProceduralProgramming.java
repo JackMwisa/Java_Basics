@@ -1,4 +1,4 @@
-package Day3;
+package Week1.Day3;
 
 public class ProceduralProgramming {
     public static void main(String[] args) {

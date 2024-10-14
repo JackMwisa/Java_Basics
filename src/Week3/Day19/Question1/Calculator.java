@@ -1,4 +1,4 @@
-package Day19.Question1;
+package Week3.Day19.Question1;
 
 //1- Create 'Calculator' interface. in this interface there should be 4 functions: Sum, Subtract, Multiply, Divide.
 //        implement this interface from 'CalculatorClass' and implement necessary functions.

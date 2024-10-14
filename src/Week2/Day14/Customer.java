@@ -1,4 +1,4 @@
-package Day14;
+package Week2.Day14;
 
 //2- Create Customer class, it should extend Person  class and it should have extra customerID(auto genarate we will not have it on constructor) and balance.
 //

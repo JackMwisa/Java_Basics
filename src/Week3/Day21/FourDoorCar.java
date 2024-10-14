@@ -1,4 +1,4 @@
-package Day21;
+package Week3.Day21;
 
 abstract class FourDoorCar implements Car {
     private String model;

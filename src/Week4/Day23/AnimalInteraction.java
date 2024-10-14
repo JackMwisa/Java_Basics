@@ -1,4 +1,4 @@
-package Day23;
+package Week4.Day23;
 
 public interface AnimalInteraction {
     void feed(String food);

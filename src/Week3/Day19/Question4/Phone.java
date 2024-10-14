@@ -1,4 +1,4 @@
-package Day19.Question4;
+package Week3.Day19.Question4;
 //
 //2- Create Interface and implement it via abstract class
 //

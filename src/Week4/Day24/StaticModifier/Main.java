@@ -1,4 +1,4 @@
-package Day24.StaticModifier;
+package Week4.Day24.StaticModifier;
 
 public class Main {
     public static void main(String[] args) {

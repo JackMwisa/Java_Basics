@@ -1,4 +1,4 @@
-package Day8;
+package Week2.Day8;
 
 public class WhileLoopsExp2 {
     public static void main(String[] args) {

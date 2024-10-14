@@ -1,4 +1,4 @@
-package Day7;
+package Week1.Day7;
 public class ShapePrinter {
     public static void printRectangle(int a, int b, char c) {
         String row = String.valueOf(c).repeat(b);

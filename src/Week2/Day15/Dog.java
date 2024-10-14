@@ -1,4 +1,4 @@
-package Day15;
+package Week2.Day15;
 
 class Dog extends Animal {
     public Dog(String name) {

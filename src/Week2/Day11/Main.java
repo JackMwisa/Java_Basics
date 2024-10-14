@@ -1,4 +1,4 @@
-package Day11;
+package Week2.Day11;
 
 import java.util.Locale;
 

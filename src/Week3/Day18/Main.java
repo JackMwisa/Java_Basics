@@ -1,4 +1,4 @@
-package Day18;
+package Week3.Day18;
 
 
 public class Main {

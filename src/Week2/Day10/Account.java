@@ -1,4 +1,4 @@
-package Day10;
+package Week2.Day10;
 
 public class Account {
     private String owner;
