@@ -6,11 +6,11 @@ public class App {
         Car myCar = new Car();
 
 
-        DaysOfWeek today = DaysOfWeek.SUNDAY;
+        DaysOfWeek today = DaysOfWeek.WEDNESDAY;
 
         DaysOfWeek day2 = DaysOfWeek.MONDAY;
 
-        System.out.println(today.getFullName());
+        System.out.println(today.getFullName() + " is day number " +  today.getNumberOfDay());
 
 
         if (day2 == today){
