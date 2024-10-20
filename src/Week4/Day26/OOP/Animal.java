@@ -1,6 +1,7 @@
 package Week4.Day26.OOP;
 
 public class Animal {
+    public static String type = "Animal";
     private String name;
     private int age;
 

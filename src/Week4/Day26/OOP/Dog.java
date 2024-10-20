@@ -1,6 +1,7 @@
 package Week4.Day26.OOP;
 
 public class Dog extends Animal {
+    public static String type = "Dog";
 
     public Dog(String name, int age) {
         super(name, age);

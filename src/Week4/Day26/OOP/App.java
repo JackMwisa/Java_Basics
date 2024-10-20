@@ -17,5 +17,10 @@ public class App {
         cat.getName();
         cat.eat();
         cat.eat("fish");
+
+
+        System.out.println(Dog.type);
+        System.out.println(Cat.type);
+        System.out.println(Animal.type);
     }
 }
