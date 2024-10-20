@@ -11,4 +11,9 @@ public class Fox extends Mammal implements Predator, Prey{
     public void runAndHide() {
         System.out.println("The Fox is running to hide itself");
     }
+
+    @Override
+    public void eat(Prey prey) {
+        Predator.super.eat(prey);
+    }
 }
