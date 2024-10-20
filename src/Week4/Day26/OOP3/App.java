@@ -6,12 +6,14 @@ public class App {
         Car myCar = new Car();
 
 
-    DaysOfWeek today = DaysOfWeek.SUNDAY;
+        DaysOfWeek today = DaysOfWeek.SUNDAY;
 
-        System.out.println(today);
+        DaysOfWeek day2 = DaysOfWeek.MONDAY;
+
+        System.out.println(today.getFullName());
 
 
-        if (today == DaysOfWeek.SUNDAY){
+        if (day2 == today){
             System.out.println("Today is Sunday!!!");
         }else {
             System.out.println("Today is not Sunday!!!");
