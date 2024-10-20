@@ -11,6 +11,8 @@ public abstract class Animal {
         return weight;
     }
 
+    public abstract void breath();
+
     public void setWeight(double weight) {
         this.weight = weight;
     }

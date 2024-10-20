@@ -1,6 +1,6 @@
 package Week4.Day26.OOP4.interfaces;
 
-public class Rabbit implements Prey {
+public class Rabbit extends Mammal implements Prey {
 
     @Override
     public void runAndHide() {
