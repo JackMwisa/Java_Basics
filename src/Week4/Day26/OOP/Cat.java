@@ -5,9 +5,14 @@ public class Cat extends Animal {
     public Cat(String name, int age) {
         super(name, age);
     }
+
     @Override
     public void eat() {
         System.out.println("Cat is eating");
+    }
+
+    public void eat(String food){
+        System.out.println("Cat is eating " + food);
     }
 
 }

@@ -11,6 +11,10 @@ public class Dog extends Animal {
         System.out.println("Dog is eating");
     }
 
+    public void eat(String food){
+        System.out.println("Dog is eating " + food);
+    }
+
     public void bark(){
         System.out.println("Dog is barking");
     }
