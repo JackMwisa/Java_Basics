@@ -1,4 +1,4 @@
-package Week4.Day26;
+package Week4.Day26.TRY;
 
 public class Sum {
     public static void main(String[] args) {

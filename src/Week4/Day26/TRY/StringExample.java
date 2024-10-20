@@ -1,4 +1,4 @@
-package Week4.Day26;
+package Week4.Day26.TRY;
 
 public class StringExample {
 
