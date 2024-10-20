@@ -5,9 +5,11 @@ public class App {
 
         Animal dog = new Dog("Milou", 10);
 
-        dog.getAge();
+        System.out.println(dog.getName());
         dog.getName();
         dog.eat();
+
+       ((Dog) dog).bark();
 
         Animal cat = new Cat("Tom", 8);
 
