@@ -15,7 +15,6 @@ public class MapInterface {
         System.out.println(nameAgeMap.keySet());
         System.out.println(nameAgeMap.values());
 
-
         for (int j : nameAgeMap.values()) {
             System.out.println(j);
         }
