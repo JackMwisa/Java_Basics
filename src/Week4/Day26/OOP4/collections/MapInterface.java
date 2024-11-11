@@ -23,13 +23,10 @@ public class MapInterface {
             System.out.println(s + " is " + nameAgeMap.get(s));
         }
 
-
         for (Map.Entry<String, Integer> entry : nameAgeMap.entrySet() ){
-
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
-
 
     }
 }
