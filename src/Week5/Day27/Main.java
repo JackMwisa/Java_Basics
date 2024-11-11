@@ -8,7 +8,6 @@ public class Main{
         Greet person2  = new Greet(25, "Jane");
         Greet person3 = new Greet(45, "Mark");
 
-
         person1.sayBye();
         person2.sayHello();
 
