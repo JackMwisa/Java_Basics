@@ -11,5 +11,6 @@ public class MonthsAndDays {
         for (int i = 0; i < months.length; i++) {
             System.out.println(months[i] + " has " + daysInMonths[i] + " days.");
         }
+        
     }
 }
